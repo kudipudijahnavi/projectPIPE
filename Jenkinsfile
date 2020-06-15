@@ -9,7 +9,7 @@ pipeline {
 
     stage('Test') {
       steps {
-        git(url: 'https://github.com/kudipudijahnavi/projectPIPE', branch: 'master', poll: true)
+        git(url: 'https://github.com/kudipudijahnavi/projectPIPE', branch: 'master', poll: true, credentialsId: '* * * * *')
       }
     }
 
