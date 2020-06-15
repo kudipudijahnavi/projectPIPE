@@ -15,7 +15,7 @@ pipeline {
 
     stage('Artifacts') {
       steps {
-        archiveArtifacts(artifacts: 'projectPIPE/target/*.jar', defaultExcludes: true, fingerprint: true)
+        archiveArtifacts(artifacts: 'projectPIPE/target/*.jar', defaultExcludes: true, fingerprint: true, caseSensitive: true, allowEmptyArchive: true)
       }
     }
 
